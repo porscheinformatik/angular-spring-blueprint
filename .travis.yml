@@ -1,0 +1,8 @@
+language: java
+
+sudo: false
+
+script: mvn -q install -P nodejs
+
+jdk:
+- openjdk8
