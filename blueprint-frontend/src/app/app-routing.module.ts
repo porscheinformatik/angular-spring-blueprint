@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {BpCarListComponent} from './bp-car-list/bp-car-list.component';
+import {BpHomeComponent} from './bp-home/bp-home.component';
 
 const routes: Routes = [
   {
     path: '',
-    children: []
+    component: BpHomeComponent
+  },
+  {
+    path: 'car-list',
+    component: BpCarListComponent
   }
 ];
 

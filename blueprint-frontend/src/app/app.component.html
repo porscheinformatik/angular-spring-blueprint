@@ -1,4 +1,23 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<div class="mdl-layout__container">
+  <mdl-layout mdl-layout-fixed-header #layout>
+    <mdl-layout-header>
+      <mdl-layout-header-row>
+        <mdl-layout-title>{{title}}</mdl-layout-title>
+        <mdl-layout-spacer></mdl-layout-spacer>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="https://github.com/porscheinformatik/angular-spring-blueprint"> <mdl-icon>code</mdl-icon> GitHub</a>
+        </nav>
+      </mdl-layout-header-row>
+    </mdl-layout-header>
+    <mdl-layout-drawer class="mdl-layout__drawer">
+      <mdl-layout-title>{{title}}</mdl-layout-title>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" [routerLink]="['/']" (click)="layout.closeDrawer()">Home</a>
+        <a class="mdl-navigation__link" [routerLink]="['/car-list']" (click)="layout.closeDrawer()">Car List</a>
+      </nav>
+    </mdl-layout-drawer>
+    <mdl-layout-content>
+      <router-outlet></router-outlet>
+    </mdl-layout-content>
+  </mdl-layout>
+</div>
