@@ -14,8 +14,8 @@
   </properties>
 
   <modules>
-    <module>blueprint-frontend</module>
     <module>blueprint-backend</module>
+    <module>blueprint-frontend</module>
     <module>blueprint-webapp</module>
   </modules>
 
@@ -46,6 +46,11 @@
           <configuration>
             <nodeVersion>v6.10.0</nodeVersion>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>cz.habarta.typescript-generator</groupId>
+          <artifactId>typescript-generator-maven-plugin</artifactId>
+          <version>1.19.294</version>
         </plugin>
       </plugins>
     </pluginManagement>

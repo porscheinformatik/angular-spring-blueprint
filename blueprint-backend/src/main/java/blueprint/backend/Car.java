@@ -31,31 +31,15 @@ public class Car {
     return vin;
   }
 
-  public void setVin(String vin) {
-    this.vin = vin;
-  }
-
   public Integer getKm() {
     return km;
-  }
-
-  public void setKm(Integer km) {
-    this.km = km;
   }
 
   public LocalDate getInitalRegistrationDate() {
     return initalRegistrationDate;
   }
 
-  public void setInitalRegistrationDate(LocalDate initalRegistrationDate) {
-    this.initalRegistrationDate = initalRegistrationDate;
-  }
-
   public CarConfiguration getConfiguration() {
     return configuration;
-  }
-
-  public void setConfiguration(CarConfiguration configuration) {
-    this.configuration = configuration;
   }
 }
