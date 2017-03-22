@@ -4,4 +4,4 @@ language: java
 jdk:
 - oraclejdk8
 
-script: mvn -q install -P nodejs
+script: mvn install -P nodejs

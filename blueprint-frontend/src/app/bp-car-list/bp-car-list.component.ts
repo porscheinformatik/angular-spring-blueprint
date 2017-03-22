@@ -20,7 +20,7 @@ export class BpCarListComponent implements OnInit {
 
   ngOnInit() {
     this.carService.getCars().subscribe(cars => {
-      this.tableModel.addAll(cars);
+      this.tableModel.addAll(<any[]>cars);
     });
   }
 
